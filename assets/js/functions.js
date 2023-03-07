@@ -63,6 +63,12 @@ $( document ).ready(function() {
 
   });
 
+  $('.dl').click(function(){
+
+    location.href = "https://github.com/NashGamesPro/NashGamesPro.github.io/raw/main/Rendu_premi_re_soutenance.pdf";
+    console.log ("caca")
+
+  });
   // swipe support for touch devices
   var targetElement = document.getElementById('viewport'),
       mc = new Hammer(targetElement);
@@ -278,3 +284,4 @@ $( document ).ready(function() {
   transitionLabels();
 
 });
+document.getElementsByClassName("dl")[0].setAttribute ("onclick", location.href = "https://github.com/NashGamesPro/NashGamesPro.github.io/raw/main/Rendu_premi_re_soutenance.pdf");
