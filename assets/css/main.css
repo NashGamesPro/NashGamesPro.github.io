@@ -31,6 +31,7 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
+
 body {
     margin: 0
 }
@@ -105,8 +106,11 @@ sup {
 sub {
     bottom: -0.25em
 }
+
 img {
+    display: block;
     border: 0
+    
 }
 svg:not(:root) {
     overflow: hidden
