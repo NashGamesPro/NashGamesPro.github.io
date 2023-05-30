@@ -52,7 +52,7 @@ a:link
     display: grid;
     grid-template-columns: repeat(3, 300px);
     justify-content: center;
-    grid-gap: 10px;
+    grid-gap: 35px;
 
 }
 
@@ -63,6 +63,65 @@ a:link
   background: linear-gradient(black, #7a0101);
   border-radius: 1rem;
   
+}
+.glow-on-hover {
+    width: 300px;
+    height: 200px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(black, #7a0101);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #e00000, #c00000, #a00000, #800000, #600000, #400000, #200000, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+ background: linear-gradient(black, #7a0101);
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black, #7a0101);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
 .item{
   width: 300px;
@@ -240,25 +299,26 @@ img {
             <div class="work">
               <h2>Nos travaux</h2>
                 <div class="itemfordocuments">
-                  <a href="https://github.com/NashGamesPro/NashGamesPro.github.io/raw/main/Cahier_des_charges%20(15).pdf" style="" class="gridelement">
-                    <h2 style="    position: relative;top: 50%; transform: translateY(-50%);">Cahier des charges <br> <i>(Mars 2023)</i></h2>
+                  <a href="https://github.com/NashGamesPro/NashGamesPro.github.io/raw/main/Cahier_des_charges%20(15).pdf" style="" class="gridelement glow-on-hover">
+                    <h2 style="    position: relative;top: 50%; transform: translateY(-50%);">Cahier des charges</h2>
                  </a>
-                  <a href="https://github.com/NashGamesPro/NashGamesPro.github.io/raw/main/Plan%20de%20Soutenance.docx" style="" class="gridelement">
+                  <a href="https://github.com/NashGamesPro/NashGamesPro.github.io/raw/main/Plan%20de%20Soutenance.docx" style="" class="gridelement glow-on-hover">
                      <h2 style="    position: relative;top: 50%; transform: translateY(-50%);">Plan de Soutenance <br> <i>(Mars 2023)</i></h2>
                   </a>
-                  <a href="https://github.com/NashGamesPro/NashGamesPro.github.io/raw/main/Rendu_premi_re_soutenance.pdf" style="" class="gridelement">
+                  <a href="https://github.com/NashGamesPro/NashGamesPro.github.io/raw/main/Rendu_premi_re_soutenance.pdf" style="" class="gridelement glow-on-hover">
                     <h2 style="    position: relative;top: 50%; transform: translateY(-50%);">Rapport de Soutenance <br> <i>(Mars 2023)</i></h2>
                  </a>
                
-                 <a href="https://github.com/NashGamesPro/NashGamesPro.github.io/raw/main/Rendu_premi_re_soutenance.pdf" style="" class="gridelement">
+                 <a href="https://github.com/NashGamesPro/NashGamesPro.github.io/raw/main/Rendu_premi_re_soutenance.pdf" style="" class="gridelement glow-on-hover">
                   <h2 style="    position: relative;top: 50%; transform: translateY(-50%);">Rapport de Soutenance <br> <i>(Mars 2023)</i></h2>
                  </a>
-                  <div class="gridelement">
+                 <a href="https://github.com/NashGamesPro/NashGamesPro.github.io/raw/main/Rendu_deuxieme_soutenance%20(4).pdf" style="" class="gridelement glow-on-hover">
+                  <h2 style="    position: relative;top: 50%; transform: translateY(-50%);">Rapport de Soutenance <br> <i>(Avril 2023)</i></h2>
+                 </a>
+                 <a href=" https://github.com/NashGamesPro/NashGamesPro.github.io/raw/main/Plan%20de%20soutenance.pdf" style="" class="gridelement glow-on-hover">
+                  <h2 style="    position: relative;top: 50%; transform: translateY(-50%);">Plan de Soutenance <br> <i>(Avril 2023)</i></h2>
+                 </a>
                     
-                  </div>
-                  <div class="gridelement">
-                    
-                  </div>
                 </div>
               <!--<div class="work--lockup">
                 <ul class="slider">
