@@ -740,7 +740,7 @@ body {
 }
 .intro--banner img {
     position: absolute;
-    bottom: 21px;
+    bottom: -51px;
     right: -12px
 }
 .intro--options {
@@ -1148,14 +1148,17 @@ body {
     background-size: cover;
     background-repeat: no-repeat
 }
-.about--options>a:nth-child(1) {
-    background-image: url("../img/about-winners.jpg")
+.discord--options>a:nth-child(1) {
+   
+    background-image: url("../img/discord\ logo.png")
 }
-.about--options>a:nth-child(2) {
-    background-image: url("../img/about-philosophy.jpg")
+.discord--options>a:nth-child(2) {
+    background-image: url("../img/email\ logo.png")
 }
-.about--options>a:nth-child(3) {
-    background-image: url("../img/about-history.jpg")
+.discord--options>a:nth-child(3) {
+    height: 0;
+    width: 0;
+    
 }
 .about--options>a:hover h3 {
     bottom: -50px
