@@ -651,8 +651,8 @@ body {
     }
 }
 .intro--banner {
-    position: relative;
-    height: 475px
+   position: relative;
+    height: 553px;
 }
 .intro--banner::before {
     content: "";
@@ -865,7 +865,7 @@ body {
 }
 .work h2 {
     margin: 0 0 20px;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center
 }
 .work--lockup {
