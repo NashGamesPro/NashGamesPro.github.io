@@ -661,7 +661,7 @@ body {
     font-weight: 900;
     line-height: 1;
     z-index: 1;
-    top: 135px;
+    top: 49px;
 }
 .intro--banner button {
     position: relative;
@@ -848,7 +848,7 @@ body {
 }
 .work h2 {
     margin: 0 0 20px;
-    font-size: 30px;
+    font-size: 33px;
     text-align: center
 }
 .work--lockup {
