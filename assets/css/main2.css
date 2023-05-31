@@ -631,7 +631,7 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 900px;
+    width: 947px;
     max-width: 75%;
     height: 100%;
     -webkit-box-orient: vertical;
@@ -652,7 +652,7 @@ body {
 }
 .intro--banner {
    position: relative;
-    height: 553px;
+    height: 550px;
 }
 
 .intro--banner h1 {
