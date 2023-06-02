@@ -78,6 +78,66 @@ a:link
     border-radius: 10px;
 }
 
+.glow-on-hover2 {
+    width: 284px;
+    height: 183px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(#000000, #7a0101);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover2:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #e00000, #c00000, #a00000, #800000, #600000, #400000, #200000, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover2:active {
+    color: #000
+}
+
+.glow-on-hover2:active:after {
+ background: linear-gradient(rgb(0, 0, 0), #7a0101);
+}
+
+.glow-on-hover2:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover2:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black, #7a0101);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
 .glow-on-hover:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #e00000, #c00000, #a00000, #800000, #600000, #400000, #200000, #ff0000);
@@ -251,7 +311,7 @@ img {
           <ul class="side-nav">
             <li class="is-active"><span>Accueil</span></li>
             <li><span>Documents</span></li>
-            <!--<li><span>À propos</span></li>-->
+            <li><span>Logiciels</span></li>
             <li><span>Contact</span></li>
             
           </ul>
@@ -300,7 +360,7 @@ img {
             <div class="work">
               <h2>Nos travaux</h2>
                 <div class="itemfordocuments">
-                  <a href="https://github.com/NashGamesPro/NashGamesPro.github.io/raw/main/Cahier_des_charges%20(15).pdf" style="" class="gridelement glow-on-hover">
+                  <a href="https://github.com/NashGamesPro/NashGamesPro.github.io/raw/main/Cahier_des_charges%20(15).pdf" target="_blank" style="" class="gridelement glow-on-hover">
                     <h2 style="    position: relative;top: 50%; transform: translateY(-50%);">Cahier des charges</h2>
                  </a>
                   <a href="https://github.com/NashGamesPro/NashGamesPro.github.io/raw/main/Plan%20de%20Soutenance.docx" style="" class="gridelement glow-on-hover">
@@ -376,34 +436,55 @@ img {
               </div>-->
             </div>
           </li>
-          <!--<li class="l-section section">
-            <div class="about">
-              <div class="about--banner">
-                <h2><br>believe in<br>passionate<br>people</h2>
-                <a href="#0">Career
-                  <span>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                    </g>
-                    </svg>
-                  </span>
-                </a>
-                <img src="assets/img/about-visual.png" alt="About Us">
-              </div>
-              <div class="about--options">
-                <a href="#0">
-                  <h3>Winners</h3>
-                </a>
-                <a href="#0">
-                  <h3>Philosophy</h3>
-                </a>
-                <a href="#0">
-                  <h3>History</h3>
-                </a>
-              </div>
+          <li class="l-section section">
+            <div class="work">
+            <div class="itemfordocuments">
+              <a href="https://unity.com/fr" target="_blank" style="display: flex;" class="gridelement glow-on-hover2">
+                <img src="assets/img/Unitylogobetterpng.png" alt="" 
+                style="   
+                height: 166px;
+                width: 284px;
+                margin-top: auto;
+                margin-bottom: auto;">
+             </a>
+              <a href="https://www.blender.org/"  target="_blank" style="display: flex; align-items: center;" class="gridelement glow-on-hover2">
+                <img src="assets/img/blender logo.png" alt="" style="height: 108px;
+                width: 139px;
+                margin-left: auto;
+                margin-right: auto;">
+              </a>
+              <a href="https://www.jetbrains.com/fr-fr/rider/" target="_blank" style="display: flex;
+              align-items: center;" class="gridelement glow-on-hover2">
+                <img src="assets/img/riderlogo.png" alt="" 
+                style="   
+                height: 147px;
+                width: 165px;
+                margin-left: auto;
+                margin-right: auto;">
+             </a>
+           
+             <a href="https://www.mixamo.com/"  target="_blank" style="display: flex;
+              align-items: center;" class="gridelement glow-on-hover2">
+                <img src="assets/img/mixamologo.png" alt="" 
+                style="   
+                height: 89px;
+                width: 289px;
+                margin-left: auto;
+                margin-right: auto;">
+             </a>
+             <a href="https://poly.cam/" target="_blank" style="display: flex;
+              align-items: center;" class="gridelement glow-on-hover2">
+                <img src="assets/img/pokycamlogo.png" alt="" 
+                style="   
+                height: 135px;
+                width: 289px;
+                margin-left: auto;
+                margin-right: auto;">
+             </a>
+             
             </div>
-          </li>-->
+          </div>
+          </li>
           <li class="l-section section">
             <div class="contact">
               <div class="container2">
@@ -543,7 +624,7 @@ img {
   <ul class="outer-nav">
     <li class="is-active">Accueil</li>
     <li>Documents</li>
-     <!--<li>à propos</li>-->
+     <li>Logiciels</li>
     <li>Contact</li>
 
   </ul>
