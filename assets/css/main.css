@@ -1875,19 +1875,19 @@ body {
   
   /* Outer Layer with the timeline border */
   .outer {
-    border-left: 404px solid #0000;
+    border-left: 329px solid #0000;
   }
   
   /* Card container */
   .card {
     position: relative;
-    margin: 0 7px 15px;
+    margin: 0 7px 6px;
     padding: 10px;
-    background: #333;
+    background:linear-gradient(black, #7a0101);
     color: gray;
     border-radius: 8px;
-    max-width: 518px;
-    height: 200px;
+    max-width: 682px;
+    height: 140px;
   }
   
   /* Information about the timeline */
